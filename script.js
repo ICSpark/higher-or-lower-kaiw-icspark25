@@ -16,11 +16,36 @@ function generateRandom() {
 
 // Function for the higher button
 function higher() {
-   
+   if (nextRandom>random){
+    
+    window.alert("you win!");
+   }
+   else if(nextRandom<random){
+    
+    window.alert('you lose!');
+   }
+   else{
+    
+    window.alert('wow what are the odds of a tie');
+   }
+   generateRandom();
 }
 
 // Function for the lower button
 function lower() {
+    if (nextRandom<random){
+    
+        window.alert("you win!");
+       }
+       else if(nextRandom>random){
+        
+        window.alert('you lose!');
+       }
+       else{
+        
+        window.alert('wow what are the odds of a tie');
+       }
+       generateRandom();
    
 }
 
